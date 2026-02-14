@@ -59,30 +59,16 @@ We implemented and evaluated two models:
   - **Identity loss**
   - **Adversarial loss (LSGAN)**
     
-## 🧠 Model 2: CUT-inspired Contrastive Learning
+## 🧠 Model 2: CUT-inspired (PatchNCE)
 
-Unlike the standard CycleGAN, our second model removes the cycle-consistency and identity losses  
-and introduces a **PatchNCE contrastive loss** to enforce semantic correspondence between the input photo and its generated Monet-style output.
-
-We used a **ResNet-based Generator** and a **Patch-level Feature Extractor** as part of the contrastive loss computation.
-
+- One generator (`G`) and one discriminator (`D`)
+  - `G`: ResNet-based generator (`resnet_15blocks`) for **one-direction translation** Photo → Monet 
+  - `D`: PatchGAN discriminator that classifies local patches as real/fake (optimized with **LSGAN**)
+- Loss functions:
+  - **PatchNCE contrastive loss** 
+  - **Adversarial loss (LSGAN)**
 
 ---
-
-## 🖼️ Generated Images
-
-Here are the generated Monet-style images for the both models across different random seeds:
-
-### 🔹 Model 1 – Generated Images
-- [Seed 42](https://drive.google.com/drive/folders/1XuNJnoxluw2PhiRhzXXnUqWDxqA--uZw?usp=sharing)
-- [Seed 123](https://drive.google.com/drive/folders/12IY4SbD-p7M9a1R6Wi3nVeIEhA2mUfF0)
-- [Seed 2025](https://drive.google.com/drive/folders/1aldg_d-P6494W1AJRKosmTrjh5-sgyTU)
-
-### 🔸 Model 2 – Generated Images
-- [Seed 42](https://drive.google.com/drive/folders/1tb9bTwr2CNaPjaT0SZskfo5HD4leqkpL?usp=sharing)
-- [Seed 123](https://drive.google.com/drive/folders/1r04UaMBJSEaQOkLg4D34FAXLCgXZvs1Z?usp=sharing)
-- [Seed 2025](https://drive.google.com/drive/folders/1npjEDUPSq0Sw1lAPpeFXuOZAS4RyrdO4?usp=sharing)
-
 
 ### 🖼️ Architecture Overview
 
@@ -123,8 +109,21 @@ $$G_{Loss} = \lambda_{GAN} \cdot GAN_{Loss} + \lambda_{NCE} \cdot NCE_{Loss}$$
 
 ---
 
+## 🖼️ Generated Images
 
+Here are the generated Monet-style images for the both models across different random seeds:
 
+### 🔹 Model 1 – Generated Images
+- [Seed 42](https://drive.google.com/drive/folders/1XuNJnoxluw2PhiRhzXXnUqWDxqA--uZw?usp=sharing)
+- [Seed 123](https://drive.google.com/drive/folders/12IY4SbD-p7M9a1R6Wi3nVeIEhA2mUfF0)
+- [Seed 2025](https://drive.google.com/drive/folders/1aldg_d-P6494W1AJRKosmTrjh5-sgyTU)
+
+### 🔸 Model 2 – Generated Images
+- [Seed 42](https://drive.google.com/drive/folders/1tb9bTwr2CNaPjaT0SZskfo5HD4leqkpL?usp=sharing)
+- [Seed 123](https://drive.google.com/drive/folders/1r04UaMBJSEaQOkLg4D34FAXLCgXZvs1Z?usp=sharing)
+- [Seed 2025](https://drive.google.com/drive/folders/1npjEDUPSq0Sw1lAPpeFXuOZAS4RyrdO4?usp=sharing)
+
+---
 ## ⚙️ Installation & Setup
 
 #### 📓 Example Notebook  
@@ -184,7 +183,7 @@ I-m-Something-of-a-Painter-Myself/
 ## 🧪 Training & Testing
 
 Model training and testing were performed **directly using Python functions**, without calling shell scripts.  
-We trained both models (CycleGAN and PatchNCE) using fixed seeds for reproducibility.
+We trained both models (CycleGAN and CUT) using fixed seeds for reproducibility.
 
 ---
 
@@ -310,8 +309,8 @@ output/
 ├── generated_images_model_2_seed_42/
 ├── ...
 ```
-
 ---
+
 ## 📊 Evaluation – MiFID (Memorization-informed FID)
 
 To assess the perceptual quality of the generated Monet-style images,  
@@ -360,23 +359,10 @@ The lower the MiFID, the better the perceptual similarity to real Monet images.
 
 | Model        | Mean MiFID | Std. Deviation |
 |--------------|------------|----------------|
-| Vanilla      | 91.537     | 3.456          |
-| PatchNCE     | 78.448     | 2.987          |
+| CycleGAN      | 91.537     | 3.456          |
+| CUT      | 78.448     | 2.987          |
 
-> These scores indicate that the contrastive model (Model 2) significantly outperforms the vanilla CycleGAN in terms of perceptual quality and generalization.
-
----
-
-## 📊 Evaluation – MiFID
-
-We use **MiFID** (Memorization-informed FID), which penalizes overfitting by comparing generated Monet images with unseen Monet test data.
-
-| Model    | Mean MiFID | Std. Deviation |
-|----------|------------|----------------|
-| Vanilla  | 91.537     | 3.456          |
-| PatchNCE | 78.448     | 2.987          |
-
----
+> These scores indicate that the CUT model (Model 2) significantly outperforms the CycleGAN in terms of perceptual quality and generalization.
 
 ## 🧪 Ablation Study – PatchNCE Weight (λ)
 
