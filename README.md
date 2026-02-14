@@ -71,17 +71,11 @@ We used a **ResNet-based Generator** and a **Patch-level Feature Extractor** as 
 
 ## 🖼️ Generated Images
 
-Here are the generated Monet-style images for both models across different random seeds:
-
-### 🔹 Model 1 – Generated Images
-- [Seed 42](https://drive.google.com/drive/folders/1XuNJnoxluw2PhiRhzXXnUqWDxqA--uZw?usp=sharing)
-- [Seed 123](https://drive.google.com/drive/folders/12IY4SbD-p7M9a1R6Wi3nVeIEhA2mUfF0)
-- [Seed 2025](https://drive.google.com/drive/folders/1aldg_d-P6494W1AJRKosmTrjh5-sgyTU)
-
+Here are the generated Monet-style images for the second model across different random seeds:
 ### 🔸 Model 2 – Generated Images
-- [Seed 42](https://drive.google.com/drive/folders/1tTA_AQvXlsuoqm8ouDR6jOXIegdHUC7u)
-- [Seed 123](https://drive.google.com/drive/folders/1JioM3EyEPU_CEb28p6a0GkqBp70T8IH2)
-- [Seed 2025](https://drive.google.com/drive/folders/1ChjS3u7FerK64CL_nXxY9eNQDU6lYa5c)
+- [Seed 42](https://drive.google.com/drive/folders/15NFASBg7etpLmDhX16OTYFxwD98bTZj7?usp=drive_link)
+- [Seed 123](https://drive.google.com/drive/folders/1mXcCO903WJEPl9KYpW4tvOyVdWvY_3zC?usp=drive_link)
+- [Seed 2025](https://drive.google.com/drive/folders/1COZ0chdET3CZK1XSDPpMaEMm_yQGTbz5?usp=drive_link)
 
 ---
 
