@@ -51,7 +51,7 @@ We implemented and evaluated two models:
 - **Model 1**: Vanilla CycleGAN – [[Paper](https://arxiv.org/abs/1703.10593)]
 - **Model 2**: Modified CycleGAN with PatchNCE (Contrastive Learning)
 
-## 🧠 Model 1 – Vanilla CycleGAN
+## 🧠 Model 1: CycleGAN (baseline)
 
 - Two generators (`G_AB`, `G_BA`) and two discriminators (`D_A`, `D_B`)
 - Loss functions:
@@ -59,7 +59,7 @@ We implemented and evaluated two models:
   - **Identity loss**
   - **Adversarial loss (LSGAN)**
     
-## 🧠 Model 2 – Modified CycleGAN with PatchNCE (Contrastive Learning)
+## 🧠 Model 2: CUT-inspired Contrastive Learning
 
 Unlike the standard CycleGAN, our second model removes the cycle-consistency and identity losses  
 and introduces a **PatchNCE contrastive loss** to enforce semantic correspondence between the input photo and its generated Monet-style output.
