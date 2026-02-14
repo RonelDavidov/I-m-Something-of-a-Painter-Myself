@@ -77,23 +77,6 @@ Here are the generated Monet-style images for the second model across different 
 - [Seed 123](https://drive.google.com/drive/folders/1mXcCO903WJEPl9KYpW4tvOyVdWvY_3zC?usp=drive_link)
 - [Seed 2025](https://drive.google.com/drive/folders/1COZ0chdET3CZK1XSDPpMaEMm_yQGTbz5?usp=drive_link)
 
----
-
-## 💾 Download Pre-trained Weights
-
-You can download the pre-trained model checkpoints for both Model 1 and Model 2 below:
-
-### 🔹 Model 1 – Pre-trained Weights
-- [Seed 42](https://drive.google.com/file/d/1qxm1GGGF-FXJ0NJf6dlg6eYO7K6_MWX9/view?usp=sharing)
-- [Seed 123](https://drive.google.com/file/d/1EJkXs5j7CBzsVvWluo_xUGFStbTMF9_A/view?usp=sharing)
-- [Seed 2025](https://drive.google.com/file/d/1W4FLw_I8Ha1dgcZihQcERy20xADDWLhN/view?usp=sharing)
-
-### 🔸 Model 2 – Pre-trained Weights
-- [Seed 42](https://drive.google.com/file/d/19i4ZTN3BfcCk-D3-XseiAmUXZ_kFtqSW/view)
-- [Seed 123](https://drive.google.com/file/d/1mknQxruzqiCzI-piM9aFbY24n2mX6ftd/view)
-- [Seed 2025](https://drive.google.com/file/d/1uJKwX2Wzzmk9gARsDuO2ZXLy0F_1OIYB/view)
-
----
 
 ### 🖼️ Architecture Overview
 
