@@ -1,7 +1,7 @@
-# 🎨 Photo-to-Monet Image Translation using CycleGAN & Contrastive Learning
+# 🎨 Unpaired Image-to-Image Translation using Contrastive Learning
 
 This repository contains our final project for the course  
-**"Deep Learning and Its Application to Signal and Image Processing and Analysis"**,  
+**"Generative AI Models"**,  
 focused on unpaired image translation from photographs to Monet-style paintings.
 
 
