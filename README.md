@@ -145,7 +145,7 @@ This repository includes a ready-to-run Jupyter notebook demonstrating:
 - 📊 MiFID evaluation for perceptual quality assessment  
 
 You can try it out here:  
-🔗 [notebooks/main_notebook.ipynb](https://github.com/DolevDahan/I-m-Something-of-a-Painter-Myself/blob/main/notebooks/main_notebook.ipynb)
+🔗 [notebooks/main_notebook.ipynb](https://github.com/RonelDavidov/I-m-Something-of-a-Painter-Myself/blob/main/notebooks/main_notebook_I_m_Something_of_a_Painter_Myself.ipynb)
 
 
 ### 1. 📥 Clone the repository
