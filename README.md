@@ -71,7 +71,13 @@ We used a **ResNet-based Generator** and a **Patch-level Feature Extractor** as 
 
 ## 🖼️ Generated Images
 
-Here are the generated Monet-style images for the second model across different random seeds:
+Here are the generated Monet-style images for the both models across different random seeds:
+
+### 🔹 Model 1 – Generated Images
+- [Seed 42](https://drive.google.com/drive/folders/1XuNJnoxluw2PhiRhzXXnUqWDxqA--uZw?usp=sharing)
+- [Seed 123](https://drive.google.com/drive/folders/12IY4SbD-p7M9a1R6Wi3nVeIEhA2mUfF0)
+- [Seed 2025](https://drive.google.com/drive/folders/1aldg_d-P6494W1AJRKosmTrjh5-sgyTU)
+
 ### 🔸 Model 2 – Generated Images
 - [Seed 42](https://drive.google.com/drive/folders/1tb9bTwr2CNaPjaT0SZskfo5HD4leqkpL?usp=sharing)
 - [Seed 123](https://drive.google.com/drive/folders/1r04UaMBJSEaQOkLg4D34FAXLCgXZvs1Z?usp=sharing)
