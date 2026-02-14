@@ -48,7 +48,7 @@ while preserving the original image structure.
 
 We implemented and evaluated two models:
 
-- **Model 1**: CycleGAN (baseline) – [[Paper](https://arxiv.org/abs/1703.10593)]
+- **Model 1**: CycleGAN (baseline) 
 - **Model 2**: CUT-inspired Contrastive Learning
 
 ## 🧠 Model 1: CycleGAN (baseline)
