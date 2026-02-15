@@ -31,7 +31,6 @@ focused on unpaired image translation from photographs to Monet-style paintings.
   To evaluate the model, we used a larger, external dataset containing 1,193 Monet paintings from [this TFDS Kaggle Dataset](https://www.kaggle.com/datasets/dimitreoliveira/monet-paintings-jpg-berkeley).  
   Since this dataset includes the same 300 Monet images from the competition, we filtered those out. The remaining **893 unique Monet paintings** were used for **MiFID** evaluation against the generated images.
 
-  📁 [893 Monet Paintings for Evaluation (Google Drive)](https://drive.google.com/drive/folders/1ZQ1aYVl646MFR2DDu6v-Ef2HLqwgXbci)
 
 <div align="center">
   <img src="images/datasetMONET_PHOTO.jpg" alt="Dataset Overview" width="600"/>
