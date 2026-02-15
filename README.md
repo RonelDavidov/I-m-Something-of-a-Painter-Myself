@@ -107,6 +107,13 @@ $$G_{Loss} = \lambda_{GAN} \cdot GAN_{Loss} + \lambda_{NCE} \cdot NCE_{Loss}$$
   <img src="images/ganloss_image.png" alt="Generator Architecture" width="600"/>
 </div>
 
+### ⚖️ Discriminator Loss (LSGAN)
+The discriminator learns to assign **1** to real Monet patches and **0** to generated patches using an **MSE (least-squares) loss**.
+
+<div align="center">
+  <img src="images/discriminator_loss.png" alt="Discriminator loss diagram" width="650"/>
+</div>
+
 ---
 
 ## 🖼️ Generated Images
