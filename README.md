@@ -97,7 +97,7 @@ $$G_{Loss} = \lambda_{GAN} \cdot GAN_{Loss} + \lambda_{NCE} \cdot NCE_{Loss}$$
   <strong>NCE Loss (Patch-wise):</strong>
 </div>
 <div align="center">
-  <img src="images/patchNCEIMAGE.png" alt="Generator Architecture" width="600"/>
+  <img src="images/NCE Loss Calculation Diagram.jpg" alt="Generator Architecture" width="600"/>
 </div>
 <br>
 <div align="center">
