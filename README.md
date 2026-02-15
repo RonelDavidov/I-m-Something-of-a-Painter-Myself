@@ -111,7 +111,7 @@ $$G_{Loss} = \lambda_{GAN} \cdot GAN_{Loss} + \lambda_{NCE} \cdot NCE_{Loss}$$
 The discriminator learns to assign **1** to real Monet patches and **0** to generated patches using an **MSE (least-squares) loss**.
 
 <div align="center">
-  <img src="images/discriminator_loss.png" alt="Discriminator loss diagram" width="650"/>
+  <img src="images/Discriminator Loss Calculation Diagram.jpg" alt="Discriminator loss diagram" width="650"/>
 </div>
 
 ---
@@ -121,9 +121,9 @@ The discriminator learns to assign **1** to real Monet patches and **0** to gene
 Here are the generated Monet-style images for the both models across different random seeds:
 
 ### 🔹 Model 1 – Generated Images
-- [Seed 42](https://drive.google.com/drive/folders/1XuNJnoxluw2PhiRhzXXnUqWDxqA--uZw?usp=sharing)
-- [Seed 123](https://drive.google.com/drive/folders/12IY4SbD-p7M9a1R6Wi3nVeIEhA2mUfF0)
-- [Seed 2025](https://drive.google.com/drive/folders/1aldg_d-P6494W1AJRKosmTrjh5-sgyTU)
+- [Seed 42](https://drive.google.com/drive/folders/1_s9-6S6_qBnpH2cPzoJ2plWWtMaAcau1?usp=sharing)
+- [Seed 123](https://drive.google.com/drive/folders/18rueHVb3RxCAJevgs0fFvwYbwDSmkQkL?usp=sharing)
+- [Seed 2025](https://drive.google.com/drive/folders/171lBz3PyoyMlTPbITDrLJPlIJA4Co-8d?usp=sharing)
 
 ### 🔸 Model 2 – Generated Images
 - [Seed 42](https://drive.google.com/drive/folders/1tb9bTwr2CNaPjaT0SZskfo5HD4leqkpL?usp=sharing)
