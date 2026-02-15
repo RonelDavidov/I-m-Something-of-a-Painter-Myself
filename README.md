@@ -117,6 +117,18 @@ The discriminator learns to assign **1** to real Monet patches and **0** to gene
 ---
 
 ## 🖼️ Generated Images
+Below are sample outputs:
+
+<div align="center">
+  <img src="images/model 1 pos2.png" alt="Sample output from Model 2 (Photo → Monet)" width="900"/>
+  <p align="center"><b>Figure:</b> Example translation results from <b>Model 1</b> (Photo → Monet).</p>
+</div>
+
+<div align="center">
+  <img src="images/model 2 pos2.png" alt="Sample output from Model 2 (Photo → Monet)" width="900"/>
+  <p align="center"><b>Figure:</b> Example translation results from <b>Model 2</b> (Photo → Monet).</p>
+</div>
+
 
 Here are the generated Monet-style images for the both models across different random seeds:
 
